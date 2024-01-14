@@ -32,6 +32,8 @@ class ChatGPTController extends Controller
                 "max_tokens" => 1000
             ]);
 
+
+
         return $response->json()['choices'][0]['message']['content'];
     }
 }
